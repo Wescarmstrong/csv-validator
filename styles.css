@@ -83,11 +83,13 @@ header ul li a {
     text-decoration: none;
     font-weight: 500;
     color: #570419;
-    padding: 8px 15px;
+    padding: 10px 20px;
     border-radius: 25px;
 }
 header ul li a:hover, header ul li a.active {
-    background: #fff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .content {
