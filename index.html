@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSV Validator</title>
     <link   rel="stylesheet" href="styles.css"
+    
 </head>
 <body>
     <section>
@@ -21,10 +22,20 @@
             <div class="content">
                 <h2>Product Bulk Edit Template</h2>
                 <p>Use this tool to quicky scan a CSV file for potential issues before performing an import.</p>
-                <a href="#">Start</a>
+                <input type="file" id="uploadFile" accept=".csv">
+                <label id="uploadFileLabel" for="uploadFile">Choose CSV File</label>
+
+                <a id="startUpload" href="#">Start</a>
             </div>
             <p class="credit">Made by Westley A.</p>
         </div>
     </section>
+
+    // TODO: jquery
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    // Papa Parse
+    <script src="lib/papaparse.min.js"></script>
+    <script src="main.js"></script>
+
 </body>
 </html>

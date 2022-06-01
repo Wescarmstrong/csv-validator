@@ -132,3 +132,18 @@ header ul li a:hover, header ul li a.active {
     left: 50px;
     color: #570419;
 }
+input[type="file"] {
+    display: none;
+}
+#uploadFileLabel {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #570419;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    box-sizing: 0 5px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
