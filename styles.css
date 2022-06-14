@@ -31,13 +31,13 @@ section {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 0 50px 50px;
+    padding: 50px 50px;
 }
 
 .container {
     position: relative;
     width: calc(100% - 100px);
-    min-height: calc(100vh - 280px);
+    min-height: calc(100vh - 180px);
     min-width: 500px;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
@@ -92,8 +92,10 @@ header ul li a:hover, header ul li a.active {
     background-size: 400% 400%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.content {
-    transform: translateX(-100px);
+.file-input-content {    
+    position: absolute;
+    top: 75px;
+    left: -50px;
     max-width: 700px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -104,15 +106,15 @@ header ul li a:hover, header ul li a.active {
     padding: 40px;
     padding-left: 110px;
 }
-.content h2 {
+.file-input-content h2 {
     font-size: 2.5em;
     color: #570419;
 }
-.content p {
+.file-input-content p {
     font-size: 1.2em;
     color: #570419;
 }
-.content a {
+.file-input-content a {
     display: inline-block;
     padding: 15px 30px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
