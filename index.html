@@ -19,13 +19,22 @@
                     <li><a href="#">Feedback</a></li>
                 </ul>
             </header>
-            <div class="file-input-content">
+            <div id="warning-notification-container">
+                <p></p>
+            </div>
+            <div id="file-input-content">
                 <h2>Product Bulk Edit Template</h2>
                 <p>Use this tool to quicky scan a CSV file for potential issues before performing an import.</p>
                 <input type="file" id="uploadFile" accept=".csv">
                 <label id="uploadFileLabel" for="uploadFile">Choose CSV File</label>
 
                 <a id="startUpload" href="#">Start</a>
+            </div>
+            <div id="file-detail-content">
+                <p id="file-name"></p>
+                <p id="file-size"></p>
+                <p id="row-length"></p>
+                <p id="file-last-modified"></p>
             </div>
             <p class="credit">Made by Westley A.</p>
         </div>

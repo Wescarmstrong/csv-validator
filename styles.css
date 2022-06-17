@@ -92,7 +92,7 @@ header ul li a:hover, header ul li a.active {
     background-size: 400% 400%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.file-input-content {    
+#file-input-content {    
     position: absolute;
     top: 75px;
     left: -50px;
@@ -106,16 +106,70 @@ header ul li a:hover, header ul li a.active {
     padding: 40px;
     padding-left: 110px;
 }
-.file-input-content h2 {
+#file-detail-content {
+    position: absolute;
+    top: 380px;
+    left: -50px;
+    width: 700px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    padding-left: 110px;
+    display: none;
+}
+#warning-notification-container {
+    position: absolute;
+    top: 20px;
+    left: 30%;
+    max-width: 700px;
+    background-color: rgba(252, 29, 29, 0.9);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    z-index: 3;
+    display: none;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+}
+#file-input-content h2 {
     font-size: 2.5em;
     color: #570419;
 }
-.file-input-content p {
+#file-input-content p {
     font-size: 1.2em;
     color: #570419;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.3em;
+    padding: 10px 0;
 }
-.file-input-content a {
-    display: inline-block;
+#warning-notification-container p {
+    font-size: 1.2em;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.3em;
+    padding: 10px 0;
+}
+#file-detail-content p {
+    font-size: 1.2em;
+    color: #570419;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.3em;
+    padding: 10px 0;
+}
+#file-input-content a {
+    float: right;
     padding: 15px 30px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     animation: gradient 15s ease infinite;
@@ -139,12 +193,12 @@ input[type="file"] {
 }
 #uploadFileLabel {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 15px 30px 15px 0px;
     color: #570419;
     margin-top: 20px;
     border-radius: 30px;
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
     box-sizing: 0 5px 10px rgba(0,0,0,0.1);
     cursor: pointer;
